@@ -1,0 +1,43 @@
+#root {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.joystick-container {  
+  max-width: 600px;
+  max-height: 600px;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  cursor: pointer;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;  
+}
+.canvas {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(40, 40, 40);
+  border-radius: 3px;
+  position: absolute;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  z-index: -1;
+  overflow: hidden;
+}
+.canvas > div {
+  position: relative;
+  border: 1px solid rgb(40, 40, 40);
+  display: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+.canvas > div > div {
+  position: relative;
+  background-color: rgb(40, 40, 40);
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
