@@ -48,9 +48,9 @@ var JoystickManager = {
         JoystickManager.clearJoystick();
     },
     init: function() {
-        JoystickManager.container = document.getElementsByClassName("joystick-container")[0];
-        JoystickManager.circle = document.getElementsByClassName("circle")[0];
-        JoystickManager.point = document.getElementsByClassName("point")[0];
+        JoystickManager.container = document.getElementById("joystick-container");
+        JoystickManager.circle = document.getElementById("circle");
+        JoystickManager.point = document.getElementById("point");
         JoystickManager.container.onmousedown = function(e){
             e.preventDefault();
             var coords = [e.clientX, e.clientY];
